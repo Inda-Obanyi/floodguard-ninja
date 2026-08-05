@@ -1,0 +1,132 @@
+@import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --background: #F4EBD0; /* Sand */
+  --foreground: #003566; /* Primary Blue */
+  --card: #ffffff;
+  --card-foreground: #003566;
+  --popover: #ffffff;
+  --popover-foreground: #003566;
+  --primary: #003566;
+  --primary-foreground: #ffffff;
+  --secondary: #2D6A4F; /* Earth Green */
+  --secondary-foreground: #ffffff;
+  --muted: #e5dbbe;
+  --muted-foreground: #4a4a4a;
+  --accent: #FF9F1C; /* Warning Orange */
+  --accent-foreground: #ffffff;
+  --destructive: #D90429; /* Danger Red */
+  --destructive-foreground: #ffffff;
+  --border: #d1c8ae;
+  --input: #d1c8ae;
+  --ring: #003566;
+  --radius: 0.75rem;
+}
+
+.dark {
+  --background: #001d3d;
+  --foreground: #F4EBD0;
+  --card: #003566;
+  --card-foreground: #F4EBD0;
+  --popover: #003566;
+  --popover-foreground: #F4EBD0;
+  --primary: #FF9F1C;
+  --primary-foreground: #001d3d;
+  --secondary: #2D6A4F;
+  --secondary-foreground: #ffffff;
+  --muted: #002855;
+  --muted-foreground: #a0a0a0;
+  --accent: #FF9F1C;
+  --accent-foreground: #001d3d;
+  --destructive: #D90429;
+  --destructive-foreground: #ffffff;
+  --border: #002855;
+  --input: #002855;
+  --ring: #FF9F1C;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+.african-pattern {
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23003566' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6zM36 4V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 64v-4H4v4H0v2h4v4h2v-4h4v-2H6zM36 64v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.kente-pattern {
+  background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h20v20H0V0zm20 20h20v20H20V20zM0 20h20v20H0V20zm20-20h20v20H20V0z' fill='%23FF9F1C' fill-opacity='0.03'/%3E%3Cpath d='M10 0v20M0 10h20M30 20v20M20 30h20' stroke='%232D6A4F' stroke-width='1' stroke-opacity='0.05'/%3E%3C/svg%3E");
+}
+
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+  border-radius: var(--radius);
+}
+
+.risk-pulse {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(0.95); opacity: 0.8; }
+  50% { transform: scale(1); opacity: 1; }
+  100% { transform: scale(0.95); opacity: 0.8; }
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+/* Evacuation Corridor Glow Effect */
+.evacuation-corridor-glow {
+  filter: drop-shadow(0 0 8px rgba(16, 185, 129, 0.8)) drop-shadow(0 0 16px rgba(16, 185, 129, 0.5));
+  animation: corridor-pulse 2s ease-in-out infinite;
+}
+
+@keyframes corridor-pulse {
+  0% { filter: drop-shadow(0 0 8px rgba(16, 185, 129, 0.8)) drop-shadow(0 0 16px rgba(16, 185, 129, 0.5)); }
+  50% { filter: drop-shadow(0 0 12px rgba(16, 185, 129, 1)) drop-shadow(0 0 24px rgba(16, 185, 129, 0.7)); }
+  100% { filter: drop-shadow(0 0 8px rgba(16, 185, 129, 0.8)) drop-shadow(0 0 16px rgba(16, 185, 129, 0.5)); }
+}
