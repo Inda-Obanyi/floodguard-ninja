@@ -1,120 +1,93 @@
-# React + Vite + shadcn/ui Starter Template
+# 🌊 FloodGuard AI
 
-A modern React starter template built with Vite, TypeScript, Tailwind CSS, and shadcn/ui components.
+## Predict. Prepare. Protect.
 
-## 🚀 Features
+### AI-Powered Flood Prediction, Early Warning & Emergency Intelligence Platform for Nigeria
 
-- ⚡️ **Vite** - Fast build tool and development server
-- ⚛️ **React 18** - Latest React with hooks support
-- 🎯 **TypeScript** - Type safety and better developer experience
-- 🎨 **Tailwind CSS** - Utility-first CSS framework
-- 🧩 **shadcn/ui** - Beautifully designed components built with Radix UI
-- 📦 **Path Mapping** - Clean imports with `@/` prefix
+FloodGuard AI is an AI-powered disaster intelligence platform designed to help Nigerian communities, emergency responders, humanitarian organizations, and decision-makers understand flood risks, receive early warnings, and take action before flooding becomes a catastrophe.
 
-## 📦 Included shadcn/ui Components
-
-- Button
-- Card
-- Input
-- Label
-- Badge
-- Dialog
-- And more...
-
-## 🛠️ Getting Started
-
-1. **Install dependencies**
-
-   ```bash
-   npm install
-   ```
-
-2. **Start development server**
-
-   ```bash
-   npm run dev
-   ```
-
-3. **Build for production**
-
-   ```bash
-   npm run build
-   ```
-
-4. **Preview production build**
-   ```bash
-   npm run preview
-   ```
-
-## 📁 Project Structure
-
-```
-src/
-├── components/
-│   └── ui/              # shadcn/ui components
-├── lib/
-│   └── utils.ts         # Utility functions
-├── App.tsx              # Main application component
-├── index.css            # Global styles with Tailwind
-└── main.tsx             # Application entry point
-```
-
-## 🎨 Customization
-
-### Adding New shadcn/ui Components
-
-This template is pre-configured with shadcn/ui. You can add more components by creating them in the `src/components/ui/` directory.
-
-### Tailwind Configuration
-
-The Tailwind configuration is set up with shadcn/ui color variables. You can customize colors and other design tokens in:
-
-- `tailwind.config.js` - Tailwind configuration
-- `src/index.css` - CSS custom properties for themes
-
-### TypeScript Configuration
-
-Path mapping is configured for clean imports:
-
-```typescript
-import { Button } from "@/components/ui/button";
-import { cn } from "@/lib/utils";
-```
-
-## 🌗 Dark Mode
-
-The template includes dark mode support through Tailwind's `dark:` classes and CSS custom properties.
-
-## 📚 Learn More
-
-- [Vite Documentation](https://vitejs.dev/)
-- [React Documentation](https://react.dev/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [shadcn/ui](https://ui.shadcn.com/)
-- [Radix UI](https://www.radix-ui.com/)
-
-## 🤝 Contributing
-
-Feel free to submit issues and enhancement requests!
-
-**⚡ Powered by [Dala](https://dala.gebeya.com)** - The AI-powered web development platform that helps you build full-stack applications faster.
+> **Don't wait for the flood. Predict the risk. Warn early. Protect lives.**
 
 ---
 
-## 🤖 What is Dala?
+## 🔗 Project Links
 
-**[Gebeya Dala](https://dala.gebeya.com)** is an intelligent web development platform that accelerates your React development workflow. Build, preview, and deploy web applications, and instant development environments.
+- 🌐 Live Demo: https://3e7e648e.mydala.app
+- 💻 GitHub: https://github.com/Inda-Obanyi/floodguard-ninja
+- 👨🏾‍💻 Portfolio: https://indaobanyi.vercel.app
 
-🔗 **Try Dala:** [dala.gebeya.com](https://dala.gebeya.com)
-
-### Why Use Dala?
-
-- **AI-Powered Development** - Get intelligent code suggestions and automated component generation
-- **Instant Preview** - See your changes live in real-time sandbox environments
-- **Zero Setup** - No local environment configuration needed
-- **Collaborative** - Build and share projects with your team
-- **Deployment Ready** - One-click deployment to production
+**Built with Dala Studio**
 
 ---
 
-Built with ❤️ by the Dala team to help developers build faster and smarter.
+# 🚨 The Problem
+
+Flooding is one of Nigeria's most persistent environmental and humanitarian challenges.
+
+Flood events can destroy homes, farms, businesses, roads, schools and critical infrastructure while displacing vulnerable communities.
+
+The challenge is not only the occurrence of floods, but also the difficulty of delivering timely, localized and actionable information to people before disaster strikes.
+
+This challenge is particularly important in communities where:
+
+- Internet access is unreliable.
+- Smartphone ownership is limited.
+- Early warnings may not reach vulnerable populations.
+- Emergency information is fragmented.
+- Communities lack localized flood-risk intelligence.
+
+FloodGuard AI was designed to address this gap.
+
+---
+
+# 💡 Our Solution
+
+FloodGuard AI is a digital flood intelligence and early-warning ecosystem that combines:
+
+- Artificial Intelligence
+- Flood-risk visualization
+- Geospatial mapping
+- Emergency intelligence
+- AI-powered safety assistance
+- Community reporting
+- SMS accessibility
+- USSD accessibility
+- WhatsApp integration concept
+- Mobile access
+
+The goal is simple:
+
+> **Predict. Prepare. Protect.**
+
+Instead of only informing people after flooding occurs, FloodGuard AI is designed to help communities understand risk and take preventive action.
+
+---
+
+# 🎯 Vision
+
+> **To become Africa's leading AI-powered disaster intelligence platform, ensuring that every community has access to timely information needed to prepare for and survive preventable disasters.**
+
+---
+
+# 🚀 Mission
+
+> **To combine Artificial Intelligence, geospatial intelligence and telecommunications to identify flood risks, deliver accessible early warnings and empower communities and emergency agencies to act before disasters become catastrophes.**
+
+---
+
+# 🧠 How FloodGuard AI Works
+
+FloodGuard AI follows a simple intelligence workflow:
+
+```text
+Environmental & Community Data
+            ↓
+       Data Processing
+            ↓
+    Flood Risk Intelligence
+            ↓
+   Geospatial Visualization
+            ↓
+   AI Safety Recommendations
+            ↓
+ Early Warning & Emergency Action
